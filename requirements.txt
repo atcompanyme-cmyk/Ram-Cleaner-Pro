@@ -1,0 +1,7 @@
+customtkinter
+psutil
+requests
+Pillow
+pystray
+plyer
+cryptography

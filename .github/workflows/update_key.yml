@@ -1,0 +1,35 @@
+name: Generate Security Key Hourly
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # سيقوم الأكشن بالعمل تلقائياً كل ساعة (دقيقة 0)
+  workflow_dispatch:      # يضيف زر "Run workflow" لتجربة الأكشن يدوياً في أي وقت
+
+jobs:
+  update-key-job:
+    runs-on: ubuntu-latest
+    
+    # تصريح للسماح للأكشن بالكتابة في المستودع
+    permissions:
+      contents: write
+
+    steps:
+      # 1. جلب الكود من المستودع للعمل عليه
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      # 2. توليد رمز عشوائي (مثلاً رقم بين 1000 و 9999)
+      - name: Generate Random Key
+        run: |
+          NEW_KEY=$((1000 + RANDOM % 9000))
+          echo $NEW_KEY > key.txt
+          echo "The new key is: $NEW_KEY"
+
+      # 3. حفظ التعديلات ورفعها للمستودع (Push)
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name 'GitHub Action Bot'
+          git config --global user.email 'action@github.com'
+          git add key.txt
+          git commit -m "Update security key [skip ci]"
+          git push

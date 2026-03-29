@@ -1,0 +1,17 @@
+Copyright (c) 2026 Ultra Code Space - AT COMPANY. All Rights Reserved. [cite: 1, 8]
+TERMS AND CONDITIONS FOR RAM CLEANER PRO EDITION
+
+1. GRANT OF USE:
+This software is NOT free. Use requires a valid license key provided by AT COMPANY.
+2. RESTRICTIONS:
+- Modification: You are STRICTLY PROHIBITED from modifying, decompiling, or reverse engineering this software. [cite: 3]
+- Bypass: Any attempt to bypass the license key verification or "Bypass Mode" logic is a violation.
+- Redistribution: You are NOT allowed to redistribute this software. [cite: 4]
+- Commercial Sale: Only authorized sales by AT COMPANY are permitted. [cite: 5]
+3. NO WARRANTY:
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND. [cite: 6]
+IN NO EVENT SHALL AT COMPANY BE LIABLE FOR ANY CLAIM OR DAMAGES. [cite: 7]
+
+Author: AT COMPANY [cite: 8]
+Organization: Ultra Code Space [cite: 8]
+Product: RamCleanerPro
